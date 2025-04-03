@@ -71,7 +71,7 @@ permalink: /people/
 <hr>
 {% endfor %}
 
-List of [MaVi alumni](/people/alumni).
+List of [alumni](/people/alumni).
 
 <hr>
 
