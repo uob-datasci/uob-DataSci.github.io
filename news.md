@@ -3,7 +3,7 @@ title: News
 permalink: /news/
 ---
 
-### **Latest news from MaVi**
+### **Latest news from Data Science Lab**
 <br>
 <div class="content list">
   {% for post in site.posts %}
