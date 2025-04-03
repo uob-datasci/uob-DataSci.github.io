@@ -1,4 +1,4 @@
-# Bristol Machine Learning and Computer Vision group page
+# Bristol Data Science Lab page
 
 
 This is repository for [Bristol DataSci lab](https://uob-datasci.github.io). We use Jekyll to run our Github page that builds upon the templates from the [Bristol CNU webpage](https://bristolcnu.github.io/) and the [Kording lab webpage](http://kordinglab.com/).
