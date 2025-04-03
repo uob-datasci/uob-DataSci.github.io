@@ -3,15 +3,15 @@
 # # # # # # # #
 
 # Basic
-name:               Bristol MaVi
+name:               Bristol DataSci
 usename4navbar:     False   #Allows for a different name to be used in the navigation bar (see navbar.html)
-title:              "Bristol Machine Learning & Computer Vision"
-description:        "We aim to further our understanding of brain functioning via computational and mathematical modelling."
+title:              "Bristol Data Science Lab"
+description:        "Data Science Lab"
 
 
 # URL
-url:                https://uob-mavi.github.io/people
-#baseurl:            https://uob-mavi.github.io/people
+url:                https://uob-datasci.github.io/people
+#baseurl:            https://uob-datasci.github.io/people
 #baseurl:            "" #For Root Domain
 permalink:          /:year/:month/:day/:title.html
 

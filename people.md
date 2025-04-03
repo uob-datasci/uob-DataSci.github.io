@@ -8,7 +8,7 @@ permalink: /people/
 
 <h4>Applications to the <a href="http://uob-mavi.github.io/Summer@MaVi.html">2025 Summer of Research @MaVi</a> have now closed.</h4><br/><br/>
 
-<h2>Machine Learning and Computer Vision Research Group</h2>
+<h2>Data Science Research Group</h2>
 
 <!--
 {% assign people_sorted = site.people | sort: "joined" %}
