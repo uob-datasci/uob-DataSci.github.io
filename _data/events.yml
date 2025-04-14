@@ -1,0 +1,34 @@
+- title: "Exploration of Neural Networks; Robustness, Bias, and Automation Across Domains"
+  date: "2025-01-23"
+  speaker: "Dr. James Pope, University of Bristol"
+  time: "13:00"
+  location: "SM1, Ada Lovelace Building"
+  abstract: >
+    This presentation combines insights from four distinct research efforts to examine critical aspects of neural networks across diverse domains. First, we explore the double descent phenomenon in nascent neural network architectures, demonstrating how training conditions and model architecture influence generalisation performance. Next, we address the robustness of convolutional neural networks (CNNs) under radiation-induced errors, proposing novel activation functions and pooling layers to enhance reliability in mission-critical environments. Additionally, we present a method leveraging large language models (LLMs) with Reasoning and Acting (ReAct) prompting for automating policy evidence collection. Lastly, using Isambard-AI, we investigate skin tone bias in convolutional neural networks. The models are trained to predict diagnosis from skin cancer image archives. Despite balancing the dataset, significant bias remains, emphasising the need for deeper analysis when using neural networks for health applications. Together, these findings highlight model architecture, environmental conditions, and ethical considerations when advancing neural network applications and motivate further research into model performance, reliability, and fairness.
+
+    This research was largely carried by MSc Data Science students.
+    (Leo Wang, William Dennis, Yang Zhang, Md Hassan)
+
+- title: "Leveraging Gaze Tracking for Building Explainable AI Solutions for EEG and Pathology Data"
+  date: "2025-03-20"
+  speaker: "Dr. Hassan Khan, Aston University"
+  time: "13:00"
+  location: "SM1, Ada Lovelace Building"
+  abstract: >
+    Deep learning models are data hungry and lack explainability; tracking the eye gaze patterns of doctors as they examine data on computer screens provides an interesting avenue for tackling both these problems. First, it provides a strategy for promptly generating large volumes of roughly labelled data that could be used for training deep learning models. Second, it may provide clues that could be used to improve the explainability features of AI models. In this talk, I will introduce some of our existing work on eye tracking based data annotation where we used denoising to derive labels from eye-gaze patterns, which were then used to train deep-CNN models for detecting regions of interest in pathology data. This will be followed by an introduction of some of our on-going work, and data collection efforts, in neurology in which we are using eye tracking and large language models to build a system that can read EEG data and provide a text summary of the recording. This talk will also introduce some real-life lessons learnt from 8 years of building neurology and pathology solutions for resource-constrained healthcare systems in LMIC countries like Pakistan.
+  bio: >
+    Dr. Hassan Khan received his PhD in Electrical and Computer Engineering from Michigan State University (2015), for his work on kernel methods for biosensing applications. He worked as an academic for several years at NUST/Pakistan and the University of Jeddah in Saudi Arabia before moving to Birmingham and joining Aston University in 2022. His research is primarily focused around biomedical, medical imaging, and neuroscience applications of Artificial Intelligence and Machine Learning, to address pain points in healthcare applications with a particular focus on resource-constrained environments and operational bottlenecks in low- and middle-income countries.
+
+- title: "TBC"
+  date: "2025-05-22"
+  speaker: "TBC"
+  time: "13:00"
+  location: "SM1, Ada Lovelace Building"
+  
+- title: "Multimodal AI for Healthcare Decision-Making: Integrating Visual and Motion Guidance in Fetal Ultrasound Navigation"
+  date: "2025-02-27"
+  speaker: "Dr. Qianhui Me, University of Bristol"
+  time: "13:00"
+  location: "AIMS centre"
+  abstract: >
+    The integration of multimodal AI into healthcare is transforming human decision-making by enhancing real-time guidance in complex medical procedures. Ultrasound scanning, a widely used yet highly operator-dependent imaging technique, requires refined hand-eye coordination to interpret images and manipulate the probe simultaneously. This talk explores how multimodal AI-driven guidance systems can improve sonographic decision-making by integrating visual and motion-based intelligence for more accurate and efficient fetal biometry Standard Plane acquisition—a critical task in obstetric examinations. I will first introduce our sensor-based multimodal ultrasound guidance system, which employs deep learning to integrate ultrasound imaging, gaze tracking, and probe motion, offering adaptive, real-time guidance to reduce skill dependency and enhance scan consistency. Building on this, I will present a sensor-free AI framework using a 3D fetal atlas for pose estimation and navigation, improving interpretability, accessibility, and eliminating reliance on external motion sensors. This seminar will discuss the broader impact of AI-assisted sonographic navigation, its potential to train non-specialists, and its role in making ultrasound scanning more precise, accessible, and autonomous.

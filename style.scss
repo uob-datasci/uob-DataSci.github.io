@@ -530,3 +530,41 @@ tbody tr:nth-child(odd) th {
   border: none;
   background-color: #FFF;
 }
+
+.event {
+  border: 1px solid #ddd;
+  padding: 1em;
+  margin: 1em 0;
+  border-radius: 8px;
+  background-color: #f8f8f8;
+}
+.event {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1em;
+  margin-bottom: 2em;
+}
+
+.event h3 {
+  margin-top: 0;
+}
+
+.event p {
+  margin: 0.3em 0;
+}
+.event {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 1em;
+  margin-bottom: 2em;
+  border-radius: 8px;
+}
+
+.abstract, .bio {
+  margin-top: 1em;
+}
+
+.abstract p, .bio p {
+  margin: 0.5em 0 0 0;
+}
