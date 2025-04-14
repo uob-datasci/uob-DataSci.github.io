@@ -119,6 +119,11 @@ permalink: /people/
 .person-card .affiliation {
   font-size: 0.9em;
   color: #666;
+  text-align: center;
+  max-width: 280px;
+}
+.person-card img {
+  margin: 0 auto;
 }
 
 .bio {

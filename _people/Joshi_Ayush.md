@@ -1,7 +1,7 @@
 ---
 name: Dr Ayush Joshi
 position: pi
-avatar: Ayush.jpeg
+avatar: ayush.jpeg
 twitter: 
 affiliation: Data Science
 website: https://research-information.bris.ac.uk/en/persons/ayush-joshi
