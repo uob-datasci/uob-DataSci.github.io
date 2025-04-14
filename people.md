@@ -3,78 +3,98 @@ title: People
 permalink: /people/
 ---
 
+<h2>Data Science Research Group</h2>
+
 {% assign people_sorted = site.people | sort: "joined" %}
 {% assign people_array = "pi|postdoc|gradstudent|others" | split: "|" %}
 
-
-<h2>Data Science Research Group</h2>
-
-<!--
-{% assign people_sorted = site.people | sort: "joined" %}
-<ul>
-{% for y in yearsSorted %}
-  <li>{{ y.name }}
-    <ul>
-      {% assign yearTitlesSorted = y.items | sort: "title" %}
-      {% for t in yearTitlesSorted %}
-      <li>{{ t.title }}</li>
-      {% endfor %}
-    </ul>
-  </li>
-{% endfor %}
-</ul>-->
-
 {% for item in people_array %}
 
-<div class="pos_header">
-{% if item == 'postdoc' %}
-<h3>Postdoctoral research associates</h3>
- {% elsif item == 'pi' %}
-<h3>Core faculty</h3>
- {% elsif item == 'gradstudent' %}
-<h3>Doctoral students</h3>
-{% elsif item == 'visiting' %}
-<h3>Visiting scholars</h3>
- {% elsif item == 'others' %} 
-<h3>Affiliated faculty</h3>
-{% elsif item == 'alumni' %}
-<h3>Alumni</h3>
-{% endif %}
-</div>
-
-<div class="content list people">
-  {% for profile in people_sorted %}
-    {% if profile.position contains item %}
-    <div class="list-item-people">
-      <p class="list-post-title">
-        {% if profile.website %}
-          {% assign url_tmp = profile.website %}
-        {% else %}
-          {% assign url_tmp = site.baseurl | append: profile.url %}
-        {% endif %}
-        {% if profile.avatar %}
-        <a href="{{url_tmp}}"><img width="200" height="230" src="{{site.baseurl}}/images/people/{{profile.avatar}}"></a>
-        {% else %}
-        <a href=""><img width="200" height="230" src="http://evansheline.com/wp-content/uploads/2011/02/facebook-Storm-Trooper.jpg"></a>
-        {% endif %}
-        <a class="name" href="{{url_tmp}}">{{ profile.name }}</a>
-        {% if profile.affiliation %}
-          <br><small><span style="color:#9d9d9d">{{ profile.affiliation }}</span></small>
-        {% else %}
-          <br><small><span style="color:#FFFFFF">.</span></small>
-        {% endif %}
-      </p>
-    </div>
+  <div class="pos_header">
+    {% if item == 'postdoc' %}
+      <h3>Postdoctoral Research Associates</h3>
+    {% elsif item == 'pi' %}
+      <h3>Core Faculty</h3>
+    {% elsif item == 'gradstudent' %}
+      <h3>Doctoral Students</h3>
+    {% elsif item == 'visiting' %}
+      <h3>Visiting Scholars</h3>
+    {% elsif item == 'others' %}
+      <h3>Affiliated Faculty</h3>
+    {% elsif item == 'alumni' %}
+      <h3>Alumni</h3>
     {% endif %}
-  {% endfor %}
-</div>
-<hr>
+  </div>
+
+  <div class="people-grid">
+    {% for profile in people_sorted %}
+      {% if profile.position contains item %}
+        <div class="person-card">
+          {% if profile.website %}
+            {% assign url_tmp = profile.website %}
+          {% else %}
+            {% assign url_tmp = site.baseurl | append: profile.url %}
+          {% endif %}
+
+          {% if profile.avatar %}
+            <a href="{{ url_tmp }}">
+              <img src="{{ site.baseurl }}/images/people/{{ profile.avatar }}" alt="{{ profile.name }}">
+            </a>
+          {% else %}
+            <a href="{{ url_tmp }}">
+              <img src="https://via.placeholder.com/200x230?text=No+Image" alt="{{ profile.name }}">
+            </a>
+          {% endif %}
+
+          <a class="name" href="{{ url_tmp }}">{{ profile.name }}</a>
+          {% if profile.affiliation %}
+            <p class="affiliation">{{ profile.affiliation }}</p>
+          {% endif %}
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+  <hr>
 {% endfor %}
 
-List of [alumni](/people/alumni).
+<p>List of <a href="/people/alumni">alumni</a>.</p>
 
-<hr>
+<style>
+.people-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 2em;
+  margin-bottom: 3em;
+}
 
-{% include footer.html %}
+.person-card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  padding: 1em;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
 
+.person-card img {
+  width: 200px;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 0.5em;
+}
 
+.person-card .name {
+  display: block;
+  font-weight: bold;
+  margin: 0.5em 0 0.2em;
+  font-size: 1.1em;
+  color: #005ea5;
+  text-decoration: none;
+}
+
+.person-card .affiliation {
+  font-size: 0.9em;
+  color: #666;
+}
+</style>
