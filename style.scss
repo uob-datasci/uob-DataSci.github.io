@@ -492,20 +492,28 @@ tbody tr:nth-child(odd) th {
 .page-title {
   margin-bottom: 0.6em;
 }
-
-.navbar-brand {
-  //font-weight: bold;
-  font-size: 20px;
-  font-weight: 300;
+.navbar {
+  padding: 0.5rem 1rem;
 }
 
-// change font for navbar
-.navbar, .navbar-nav>li>a {
-  background-color: white;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  font-size: 80%;
+.navbar-brand img {
+  height: 60px;
+  width: auto;
 }
+
+.navbar-nav > li > a {
+  padding: 15px 20px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li.active > a {
+  color: #2348a3;
+  border-bottom: 2px solid #2348a3;
+}
+
+
 
 // fix menu bar spacing for mobile
 @media(max-width: 40em){
@@ -568,3 +576,31 @@ tbody tr:nth-child(odd) th {
 .abstract p, .bio p {
   margin: 0.5em 0 0 0;
 }
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+}
+.navbar-brand {
+  padding: 5px 0;
+}
+
+.navbar-brand img {
+  max-height: 2000px;
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+.site-logo {
+  height: auto;
+  max-height: 2000px; /* Try 120, or increase to 140/160 if needed */
+  width: auto;
+  display: block;
+  padding: 10px 0;
+}
+.site-logo {
+  height: 2000px;
+  max-height: none;
+}
+

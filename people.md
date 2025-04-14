@@ -3,6 +3,8 @@ title: People
 permalink: /people/
 ---
 
+<div class="container">
+
 <h2>Data Science Research Group</h2>
 
 {% assign people_sorted = site.people | sort: "joined" %}
@@ -30,6 +32,7 @@ permalink: /people/
     {% for profile in people_sorted %}
       {% if profile.position contains item %}
         <div class="person-card">
+
           {% if profile.website %}
             {% assign url_tmp = profile.website %}
           {% else %}
@@ -42,14 +45,28 @@ permalink: /people/
             </a>
           {% else %}
             <a href="{{ url_tmp }}">
-              <img src="https://via.placeholder.com/200x230?text=No+Image" alt="{{ profile.name }}">
+              <img src="https://via.placeholder.com/160?text=No+Image" alt="{{ profile.name }}">
             </a>
           {% endif %}
 
           <a class="name" href="{{ url_tmp }}">{{ profile.name }}</a>
+
           {% if profile.affiliation %}
             <p class="affiliation">{{ profile.affiliation }}</p>
           {% endif %}
+
+          {% if profile.bio %}
+            <p class="bio">{{ profile.bio }}</p>
+          {% endif %}
+
+          <div class="social">
+            {% if profile.github %}
+              <a href="{{ profile.github }}" target="_blank">GitHub</a>
+            {% endif %}
+            {% if profile.linkedin %}
+              <a href="{{ profile.linkedin }}" target="_blank">LinkedIn</a>
+            {% endif %}
+          </div>
         </div>
       {% endif %}
     {% endfor %}
@@ -58,8 +75,15 @@ permalink: /people/
 {% endfor %}
 
 <p>List of <a href="/people/alumni">alumni</a>.</p>
+</div>
 
 <style>
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+}
+
 .people-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -80,7 +104,7 @@ permalink: /people/
   width: 200px;
   height: 230px;
   object-fit: cover;
-  border-radius: 4px;
+  border-radius: 4px; /* slight rounding if you want, or set to 0 */
   margin-bottom: 0.5em;
 }
 
@@ -96,5 +120,23 @@ permalink: /people/
 .person-card .affiliation {
   font-size: 0.9em;
   color: #666;
+}
+
+.bio {
+  font-size: 0.9em;
+  color: #444;
+  margin-top: 0.5em;
+}
+
+.social a {
+  display: inline-block;
+  margin: 0.3em;
+  font-size: 0.85em;
+  color: #005ea5;
+  text-decoration: none;
+}
+
+.social a:hover {
+  text-decoration: underline;
 }
 </style>
