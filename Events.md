@@ -6,6 +6,8 @@ title: Events
 {% assign today = site.time | date: "%Y-%m-%d" %}
 {% assign upcoming = site.data.events | where_exp: "e", "e.date >= today" | sort: "date" %}
 {% assign past = site.data.events | where_exp: "e", "e.date < today" | sort: "date" | reverse %}
+<div class="events-container">
+
 
 <h2>Upcoming Events</h2>
 {% if upcoming.size > 0 %}
@@ -80,3 +82,31 @@ title: Events
 </div>
 
 {% endfor %}
+</div> <!-- end .events-container -->
+
+
+<style>
+.events-container {
+  padding: 2rem;
+  max-width: 960px;
+  margin: auto;
+}
+
+.event {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1em;
+  margin: 2em 0;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.05);
+}
+
+.event h3 {
+  margin-top: 0;
+}
+
+.event p {
+  margin: 0.5em 0;
+}
+</style>
+
