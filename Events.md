@@ -1,13 +1,13 @@
 ---
-title: Meetings
-permalink: /meetings/
+title: Events
+permalink: /events/
 ---
 
-### <span style="color:#0095a9">MaVi Seminar Series</span>
+### <span style="color:#0095a9">Data Science Seminar Series</span>
 <br>
 <div class="content list">
   {% for post in site.posts %}
-    {% if post.categories contains 'meeting' %}
+    {% if post.categories contains 'event' %}
     <div class="list-item">
     <p class="list-post-title">
         <small>{{post.date | date: "%d/%m/%y" }} {{ post.time }} Room: {{ post.location }}</small>: <b><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></b>
@@ -19,7 +19,7 @@ permalink: /meetings/
 </div>
 
 
-#### Other relevant meetings:
+#### Other relevant Events:
 
 
 <hr>

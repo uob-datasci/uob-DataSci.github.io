@@ -5,10 +5,8 @@ permalink: /about/
 
 ### About us
 <header class="masthead text-justify" style="font-size:120%">
-Computational neuroscientists apply computational and mathematical approaches to the study of the brain and, in the other direction, seek to uncover insights into computation and mathematics by working with experimental neuroscientists in trying to understanding how the brain works.​ Our work draws inspiration from a wide range of disciplines (e.g. neuroscience, mathematics, machine learning, statistics, computer science and physics).
 
 <br><br>
- Computational neuroscience at the University of Bristol has a long tradition. At BCNU we are particularly interested in the algorithmic structure of the central nervous system and the neurobiological systems and mechanisms that support them. 
  </header>
 <br>
 
@@ -27,9 +25,8 @@ Computational neuroscientists apply computational and mathematical approaches to
         <div class="content list">
           We are based in the beautiful Clifton campus as part of the <a href="https://www.bristol.ac.uk/engineering/school-sceem/" target="_blank">School of Computer Science, Electrical and Electronic Engineering, and Engineering Maths</a> (SCEEM), <a href="https://www.bristol.ac.uk/engineering/" target="_blank">Faculty of Engineering</a>, <a href="http://www.bristol.ac.uk" target="_blank">University of Bristol</a>.<br> <br>
 
-          <b>Bristol Computational Neuroscience Unit</b><br>
-          Merchant Venturers Building<br>
-          Woodland Road<br>
+          <b>Bristol Data Science Lab</b><br>
+          Ada Lovelace Building<br>
           BS8 1UB, Bristol<br>
           United Kingdom<br><div style="line-height:1%;"><br></div>
         </div>

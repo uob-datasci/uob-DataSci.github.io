@@ -27,8 +27,8 @@ future:             true
 nav:
   - name:           "PEOPLE"
     href:           "/people"
-  - name:           "MEETINGS"
-    href:           "/meetings"    
+  - name:           "Events"
+    href:           "/Events"    
   - name:           "NEWS"
     href:           "/news"
 
