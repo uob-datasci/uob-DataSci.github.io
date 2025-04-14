@@ -7,7 +7,7 @@ permalink: /people/
 
 <h2>Data Science Research Group</h2>
 
-{% assign people_sorted = site.people | sort: "joined" %}
+{% assign people_sorted = site.people | sort: "name" %}
 {% assign people_array = "pi|postdoc|gradstudent|others" | split: "|" %}
 
 {% for item in people_array %}
@@ -76,7 +76,6 @@ permalink: /people/
 
 <p>List of <a href="/people/alumni">alumni</a>.</p>
 </div>
-
 <style>
 .container {
   max-width: 1200px;
@@ -85,12 +84,12 @@ permalink: /people/
 }
 
 .people-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 2em;
-  margin-bottom: 3em;
-}
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centers the last row */
+  gap: 2rem;
 
+}
 .person-card {
   background: #fff;
   border: 1px solid #e0e0e0;

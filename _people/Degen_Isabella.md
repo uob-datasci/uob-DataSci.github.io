@@ -5,4 +5,5 @@ avatar: Degen_Isabella.webp
 twitter: 
 affiliation: Supervised by Zahraa Abdallah, Henry Reeve and Kate Robson Brown
 website: https://research-information.bris.ac.uk/en/persons/isabella-degen
+linkedin: "https://www.linkedin.com/in/isabelladegen/"
 ---
