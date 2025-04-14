@@ -21,4 +21,3 @@ permalink: /news/
 
 <br>
 <hr>
-{% include footer.html %}

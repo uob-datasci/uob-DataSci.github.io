@@ -600,4 +600,24 @@ tbody tr:nth-child(odd) th {
   padding-top: 0;
   margin-top: -70px; /* 👈 This moves the logo upward */
 }
+.footer-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.footer-logos img {
+  max-height: 40px;
+  width: auto;
+  object-fit: contain;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.footer-logos img:hover {
+  opacity: 1;
+}
 
