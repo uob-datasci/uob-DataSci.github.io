@@ -12,6 +12,8 @@ html,
 body {
   margin: 0;
   padding: 0;
+  padding-top: 40px; /* Adjust to match or slightly exceed navbar height */
+
 }
 
 html {
@@ -496,11 +498,6 @@ tbody tr:nth-child(odd) th {
   padding: 0.5rem 1rem;
 }
 
-.navbar-brand img {
-  height: 60px;
-  width: auto;
-}
-
 .navbar-nav > li > a {
   padding: 15px 20px;
   font-size: 16px;
@@ -586,12 +583,7 @@ tbody tr:nth-child(odd) th {
   padding: 5px 0;
 }
 
-.navbar-brand img {
-  max-height: 2000px;
-  width: auto;
-  display: inline-block;
-  vertical-align: middle;
-}
+
 .site-logo {
   height: auto;
   max-height: 2000px; /* Try 120, or increase to 140/160 if needed */
@@ -599,8 +591,13 @@ tbody tr:nth-child(odd) th {
   display: block;
   padding: 10px 0;
 }
-.site-logo {
-  height: 2000px;
-  max-height: none;
+.navbar-brand img {
+  max-height: 200px;
+  height: auto;
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: 0;
+  margin-top: -70px; /* 👈 This moves the logo upward */
 }
 

@@ -1,36 +1,29 @@
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
-
-    <!-- Brand and toggle for mobile -->
-    <div class="navbar-header page-scroll">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse">
+    <!-- Brand + toggle for mobile -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-   
 
-
-      <a class="navbar-brand page-scroll" href="/">
-        {% if site.usename4navbar %}
-          <span style='font-family:"Open Sans"; font-weight:300;'>{{ site.name }}</span>
-        {% else %}
-            <img src="/images/logo/banner.png" style="max-height:400px; width: 100px;" alt="Site logo">
-        {% endif %}
+      <!-- ✅ Logo inside the brand container -->
+      <a class="navbar-brand" href="/">
+        <img src="/images/logo/banner.png" class="ds-logo" alt="Data Science Lab logo">
       </a>
     </div>
 
-    <!-- Navbar links -->
+    <!-- Menu links -->
     <div class="collapse navbar-collapse" id="bs-navbar-collapse">
       <ul class="nav navbar-nav navbar-right">
-        {% for nav in site.nav %}  
+        {% for nav in site.nav %}
           <li class="{% if page.url == nav.href %}active{% endif %}">
-            <a class="name" href="{{ nav.href }}">{{ nav.name }}</a>
+            <a href="{{ nav.href }}">{{ nav.name }}</a>
           </li>
         {% endfor %}
       </ul>
     </div>
-
   </div>
 </nav>
