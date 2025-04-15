@@ -31,6 +31,8 @@ nav:
     href:           "/Events"    
   - name:           "NEWS"
     href:           "/news"
+  - name:           "ABOUT US"
+    href:           "/about"
 
 # Sass
 sass:
