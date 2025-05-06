@@ -19,11 +19,13 @@
   bio: >
     Dr. Hassan Khan received his PhD in Electrical and Computer Engineering from Michigan State University (2015), for his work on kernel methods for biosensing applications. He worked as an academic for several years at NUST/Pakistan and the University of Jeddah in Saudi Arabia before moving to Birmingham and joining Aston University in 2022. His research is primarily focused around biomedical, medical imaging, and neuroscience applications of Artificial Intelligence and Machine Learning, to address pain points in healthcare applications with a particular focus on resource-constrained environments and operational bottlenecks in low- and middle-income countries.
 
-- title: "TBC"
-  date: "2025-05-22"
-  speaker: "TBC"
+- title: "Robust AI - Learning and Generalisation Challenges"
+  date: "2025-05-15"
+  speaker: "Dr. Gabriel Leivas Oliveira"
   time: "13:00"
-  location: "SM1, Ada Lovelace Building"
+  location: "SM2, Ada Lovelace Building"
+  abstract: >
+    Robust machine learning is a long-standing goal of AI, where systems can autonomously learn representations and/or interpret data under nearly any operational condition. Current learning methods have achieved impressive performance across various benchmarks, nevertheless key aspects such as generalization, efficiency and robustness remain under explored. In this talk, I address three critical topics on robust machine learning: Multi-task learning, focusing on adaptive parameter sharing strategies to efficiently scale models while mitigating negative task interference; Learning with rejection, introducing methods for selective prediction to improve decision-making reliability; and Regularization through flood algorithms, specifically adaptive approaches that dynamically adjust based on sample difficulty to enhance generalization and resilience against overfitting.
   
 - title: "Multimodal AI for Healthcare Decision-Making: Integrating Visual and Motion Guidance in Fetal Ultrasound Navigation"
   date: "2025-02-27"
