@@ -1,8 +1,8 @@
 ---
-name: Perla Mayo
+name: Huw Day
 position: postdoc
-avatar: Mayo_Perla.jpg
+avatar: Huw_Day.jpg
 twitter: 
-affiliation: Mohammad Golbabaee group
-website: https://p-mayo.github.io/
+affiliation: Telmo Silva Filho's Group
+website: https://research-information.bris.ac.uk/en/persons/huw-w-day
 ---
